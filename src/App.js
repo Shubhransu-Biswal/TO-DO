@@ -49,7 +49,7 @@ const App = () => {
           body: JSON.stringify({
             goals: enteredText,
             id: `m${
-              localStorage.getItem("value") ? localStorage.getItem("value") : 1
+              localStorage.getItem("value") ? localStorage.getItem("value") : i
             }`,
           }),
         }
