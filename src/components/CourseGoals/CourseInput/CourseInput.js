@@ -21,6 +21,7 @@ const CourseInput = (props) => {
       return;
     } else {
       props.onAddGoal(enteredValue);
+      setEnteredValue("");
     }
   };
 
@@ -30,7 +31,11 @@ const CourseInput = (props) => {
         className={`${styles["form-control"]} ${!isValid && styles.invalid} `}
       >
         <label>Daily Tasks</label>
-        <input type="text" onChange={goalInputChangeHandler} />
+        <input
+          type="text"
+          onChange={goalInputChangeHandler}
+          value={enteredValue}
+        />
       </div>
       <Button type="submit" loading={props.loading}>
         Add Task
