@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+}
+.mainBack {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./assets/Wallpapers.jpeg);
+  background-position: top;
+  background-size: cover;
+}
+.mainBack img {
+  display: none;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#goals {
+  width: 35rem;
+  max-width: 90%;
+  margin: 3rem auto;
+}
+
+#goal-form {
+  width: 30rem;
+  max-width: 90%;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.containGoals {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+  /* filter: blur(1rem); */
+}
